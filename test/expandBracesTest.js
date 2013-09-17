@@ -23,6 +23,9 @@ describe('expandBraces', function () {
     it('should leave strings with escaped braces alone', function () {
         expect(expandBraces('\\}a\\{b,c,d\\}e\\{').sort()).to.deep.equal(['}a{b,c,d}e{']);
     });
+    it('should work with arrays', function () {
+        expect(expandBraces(['a{b,c}{d,e}', 'a{b,c,d,e{f,g}}h']).sort()).to.deep.equal(['abd', 'abe', 'abh', 'acd', 'ace', 'ach', 'adh', 'aefh', 'aegh']);
+    });
 });
 
 
