@@ -1,0 +1,37 @@
+{
+  "name": "pathname-expansion",
+  "version": "0.0.1",
+  "description": "powerful, intuitive, expressive globbing and remapping",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtudury/pathname-expansion.git"
+  },
+  "keywords": [
+    "path",
+    "expansion",
+    "glob",
+    "globbing",
+    "mapping",
+    "remapping",
+    "file",
+    "filename"
+  ],
+  "author": "david tudury",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/dtudury/pathname-expansion/issues"
+  },
+  "dependencies": {
+    "q": "~0.9.7",
+    "lodash": "~2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.7.2",
+    "sinon": "~1.7.3"
+  }
+}
